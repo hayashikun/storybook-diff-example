@@ -1,0 +1,25 @@
+{
+  "name": "storybook-diff-example",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Example monorepo showing storybook-diff on pull requests",
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build": "pnpm -r --filter \"./packages/*\" build",
+    "typecheck": "pnpm -r --filter \"./packages/*\" typecheck"
+  },
+  "devDependencies": {
+    "@storybook/react-vite": "catalog:",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "storybook": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}
