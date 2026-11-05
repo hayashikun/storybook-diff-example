@@ -14,3 +14,6 @@ export const Neutral: Story = {}
 export const Success: Story = { args: { tone: 'success' } }
 export const Warning: Story = { args: { tone: 'warning', children: 'Pending' } }
 export const Danger: Story = { args: { tone: 'danger', children: 'Suspended' } }
+export const LongLabel: Story = {
+  args: { tone: 'success', children: 'Verified by admin' },
+}
