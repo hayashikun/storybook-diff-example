@@ -14,7 +14,10 @@ export function Dashboard({ stats }: { stats: Stat[] }) {
     return <EmptyState message="No data for this period." />
   }
   return (
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 220px)', gap: 16 }}>
+    <div
+      data-testid="dashboard-stats"
+      style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 220px)', gap: 16 }}
+    >
       {stats.map((s) => (
         <Card key={s.label} title={s.label}>
           <div style={{ fontSize: 32, fontWeight: 700, color: colors.text }}>
